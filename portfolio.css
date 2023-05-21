@@ -1,0 +1,857 @@
+
+*,*:before,*:after {
+    display: flexbox;
+    box-sizing: inherit;
+    -webkit-user-select: inherit;
+    user-select: inherit;
+    -webkit-user-drag: inherit;
+    -webkit-tap-highlight-color: inherit;
+    backface-visibility: inherit
+}
+
+html, body {  
+    box-sizing: border-box;  
+    overflow: hidden;   
+    background-color: black;
+}
+
+#canvas {
+    z-index: -1;
+    width: 96%;
+    height: 92vh;
+    margin-top: 2.5vh;
+    margin-left: 2%;
+    border: 2px solid white;
+    
+}
+
+@media screen and (max-width: 600px) {
+    #canvas {
+        border: 2px solid white;
+    }
+}
+
+#Title {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    font-size: 50px;
+    font-weight: bold;
+    font-style: italic;
+    text-shadow: 6px 6px 6px black;
+    color: white;
+}
+
+@media screen and (max-width: 600px) {
+    #Title {
+        position: absolute;
+        top: 8%;
+        left: 25%;
+        font-size: 30px;
+    }
+}
+
+#Tv {
+    width: 400px;
+    height: 450px;
+    position: absolute;
+    top: 170px;
+    left: 100px;
+    background-color: black;
+    box-shadow: 8px 8px 8px black;
+    border-top-right-radius: 5%;
+    border-top-left-radius: 5%;
+    border: 2px solid white;
+}
+
+@media screen and (max-width: 600px) {
+    #Tv {
+        width: 63%;
+        height: 230px;
+        position: absolute;
+        top: 110px;
+        left: 70px;
+    }
+}
+
+#Remote {
+    width: 100%;
+    height: 23%;
+    position: absolute;
+    top: 77%;
+    background-color: #A9A9A9;
+    border: 2px solid white;
+}
+
+#First-section {
+    background-color: black;
+    width: 45%;
+    height: 37%;
+    position: absolute;
+    top: 12%;
+    right: 12%;
+    box-shadow: 8px 8px 8px black;
+    border: 2px solid white;
+}
+
+@media screen and (max-width: 600px) {
+    #First-section {
+        width: 80%;
+        height: 18%;
+        position: absolute;
+        top: 55%;
+        left: 9.5%;
+    } 
+}
+
+#Second-section {
+    background-color: black;
+    width: 19%;
+    height: 33%;
+    position: absolute;
+    top: 56%;
+    right: 7%;
+    box-shadow: 8px 8px 8px black;
+    border: 2px solid white;
+}
+
+@media screen and (max-width: 600px) {
+    #Second-section {
+        width: 30%;
+        height: 17%;
+        position: absolute;
+        top: 75%;
+        right: 8%;
+    }
+}
+
+#Third-section {
+    background-color: black;
+    width: 32%;
+    height: 33%;
+    position: absolute;
+    top: 56%;
+    right: 30%;
+    box-shadow: 8px 8px 8px black;
+    border: 2px solid white;
+}
+
+@media screen and (max-width: 600px) {
+    #Third-section {
+        width: 50%;
+        height: 17%;
+        position: absolute;
+        top: 75%;
+        left: 7%;
+    }
+}
+
+#Home {
+    position: absolute;
+    color: white;
+    width: 100%;
+    z-index: 99;
+}
+
+#Home-text {
+    padding-top: 20px;
+    font-family: cursive;
+    font-size: 16px;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    #Home-text {
+        padding-top: 0;
+        font-family: cursive;
+        font-size: 9px;
+    }
+}
+
+#Home-title, #Certificates-title, #Skills-title, #Info-title, #Works-title, #Blog-title, #Contact-title {
+    font-size: 18px;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    #Home-title, #Certificates-title, #Skills-title, #Info-title, #Works-title, #Blog-title, #Contact-title {
+        font-size: 14px;
+        text-align: center;
+    }
+}
+
+#Skills, #Info, #Certificates, #Works, #Blog, #Contact {
+    position: absolute;
+    color: white;
+    width: 100%;
+    z-index: 99;
+    display: none;
+}
+
+#Skills-text, #Certificates-text, #Works-text, #Blog-text, #Contact-text {
+    margin-left: 20px;
+    font-size: 15px;
+    font-family: cursive;
+}
+
+@media screen and (max-width: 600px) {
+    #Skills-text, #Certificates-text, #Works-text, #Blog-text, #Contact-text {
+        margin-left: 10px;
+        font-size: 9px;
+    }
+}
+
+#Info-text {
+    font-size: 15px;
+    font-family: cursive;
+    text-align: center;
+    margin-right: 11%;
+}
+
+@media screen and (max-width: 600px) {
+    #Info-text {
+        font-size: 10px;
+        margin-right: 17%;
+    }
+}
+
+.remote-button {
+    z-index: 99;
+    width: 21%;
+    height: 30%;
+    background: linear-gradient(
+        45deg,
+        #202020,
+        white
+    );
+    border: 2px solid white;
+    box-shadow: 5px 5px 5px black;
+    border-radius: 15px;
+}
+
+@media screen and (max-width: 600px) {
+    .remote-button {
+        z-index: 99;
+        width: 21%;
+        height: 38%;
+        background: linear-gradient(
+            45deg,
+            #202020,
+            white
+        );
+        border: 2px solid white;
+        box-shadow: 5px 5px 5px black;
+        border-radius: 15px;
+    }
+}
+
+.remote-button:active {
+    transform: translateY(3px);
+}
+
+#Home-button {
+    position: absolute;
+    top: 13px;
+    left: 8px;
+}
+
+@media screen and (max-width: 600px) {
+    #Home-button {
+        position: absolute;
+        top: 2px;
+        left: 5px;
+    }
+}
+
+#Skills-button {
+    position: absolute;
+    top: 13px;
+    left: 103px;
+}
+
+@media screen and (max-width: 600px) {
+    #Skills-button {
+        position: absolute;
+        top: 2px;
+        left: 62px;
+    }
+}
+
+#Info-button {
+    position: absolute;
+    top: 13px;
+    left: 203px;
+}
+
+@media screen and (max-width: 600px) {
+    #Info-button {
+        position: absolute;
+        top: 2px;
+        left: 122px;
+    }
+}
+
+#Works-button {
+    position: absolute;
+    top: 13px;
+    left: 303px;
+}
+
+@media screen and (max-width: 600px) {
+    #Works-button {
+        position: absolute;
+        top: 2px;
+        left: 182px;
+    }
+}
+
+#Certificates-button {
+    position: absolute;
+    top: 55px;
+    left: 8px;
+}
+
+@media screen and (max-width: 600px) {
+    #Certificates-button {
+        position: absolute;
+        top: 25px;
+        left: 5px;
+    }
+}
+
+
+#Blog-button {
+    position: absolute;
+    top: 55px;
+    left: 103px;
+}
+
+@media screen and (max-width: 600px) {
+    #Blog-button {
+        position: absolute;
+        top: 25px;
+        left: 63px;
+    }
+}
+
+#Contact-button {
+    position: absolute;
+    top: 55px;
+    left: 203px;
+}
+
+@media screen and (max-width: 600px) {
+    #Contact-button {
+        position: absolute;
+        top: 25px;
+        left: 121px;
+    }
+}
+
+#Off-button {
+    position: absolute;
+    top: 55px;
+    left: 303px;
+}
+
+@media screen and (max-width: 600px) {
+    #Off-button {
+        position: absolute;
+        top: 25px;
+        left: 182px;
+    }
+}
+
+.btn{
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+    .btn{
+        text-decoration: none;
+        color: black;
+        font-size: 7.5px;
+        
+    }
+}
+
+#On-button {
+    width: 6%;
+    height: 5%;
+    position: absolute;
+    top: 11.5%;
+    left: 24%;
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    #On-button {
+        position: absolute;
+        top: 9.5%;
+        left: 60%;
+        display: none;
+        width: 60px;
+        height: 20px;
+    }
+}
+
+
+#On-text {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 600px) {
+    #On-text {
+        font-size: 12px;
+    }
+}
+
+#Fcc {
+    text-decoration: none;
+    color: #707070; 
+}
+
+#Fcc:hover {
+    color: blue;
+}
+
+#W3s {
+    text-decoration: none;
+    color: #707070;
+}
+
+#W3s:hover {
+    color: LimeGreen;
+}
+
+.works-websites {
+    text-decoration: none;
+    color: #808080;
+}
+
+.works-websites:hover {
+    color: #FFFFFF;
+    opacity: 0.7;
+}
+
+.Social-media{
+    display: flex;
+    justify-content: center;
+}
+ 
+.sm {
+    display: flex;
+    background: black;
+    height: 30px;
+    width: 30px;
+    margin: 0 15px;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    box-shadow: 4px 4px 7px -1px rgba(0,124,196,0.15),
+                -4px -4px 7px -1px rgba(255,255,255,0.7);
+    border: 1px solid rgba(0, 124, 196, 0);
+    transition: transform 0.5s
+}
+
+@media screen and (max-width: 600px) {
+    .sm {
+        height: 10px;
+        width: 10px;
+        margin-top: 10px;
+    }
+}
+
+.sm i{
+    font-size: 30px;
+    color:#777;
+    transition: transform 0.5s;
+}
+
+@media screen and (max-width: 600px) {
+    .sm i{
+        font-size: 18px;
+        color:#777;
+        transition: transform 0.5s;
+    }
+}
+  
+.sm:hover{
+    box-shadow:inset 4px 4px 6px -2px rgba(0,0,0,0.2),
+                inset -4px -4px 6px -1px rgba(255,255,255,0.7),
+                      -0.5px -0.5px 0px -1px rgba(255,255,255,1),
+                      0.5px 0.5px 0px rgba(0,0,0,0.15),
+                      0px 12px 10px -10px rgba(0,0,0,0.05);
+    border: 1px solid rgba(0, 124, 196, 0.1);
+    transform: translateY(2px);
+}
+
+.sm:hover i{
+    transform: scale(0.90);
+}
+
+.sm:hover .fa-facebook{
+    color: #3b5998;
+}
+
+.sm:hover .fa-twitter{
+    color: #00acee;
+}
+
+.sm:hover .fa-linkedin{
+    color: #1E90FF;
+}
+
+.sm:hover .fa-instagram{
+    color: #f14843;
+}
+
+.sm:hover .fa-youtube{
+    color: #f00;
+}
+
+.sm:hover .fa-github {
+    color: #191970;
+}
+
+.home-section {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.skills-section {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+#Skills-section {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.skills-section-text {
+    color: white;
+    font-size: 14px; 
+    width: 30%;
+    margin-left: 8%;
+    font-family: cursive;
+}
+
+@media screen and (max-width: 600px) {
+    .skills-section-text {
+        font-size: 8px; 
+        width: 20%;
+        margin-left: 6%;
+    }
+}
+
+.sstt {
+    font-size: 18px;
+    color: #686868;
+    font-family: cursive;
+}
+
+@media screen and (max-width: 600px) {
+    .sstt {
+        font-size: 10px;
+    }
+}
+
+.info-section {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    display: none;
+    overflow: auto;
+}
+
+#Mini-novel {
+    color: white;
+    font-family: cursive;
+    font-size: 17px;
+    margin: 10px 25px 15px 25px;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    #Mini-novel {
+        font-size: 11px;
+        margin: 10px 20px 10px 20px;
+    }
+}
+
+#Mini-novel-title {
+    color: white;
+    font-family: cursive;
+    font-size: 20px;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    #Mini-novel-title {
+        font-size: 16px;
+    }
+}
+
+.works-section {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.certificates-section {
+    padding-top: 20px;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .certificates-section {
+        padding-top: 10px;
+    }
+}
+
+#Certificate12 {
+    display: flex;
+} 
+
+#Certificate1 {
+    width: 100%;
+    height: 60%;
+    object-fit: contain;
+}
+
+@media screen and (max-width: 600px) {
+    #Certificate1 {
+        width: 100%;
+        height: 40%;
+    }
+}
+
+#Certificate2 {
+    width: 100%;
+    height: 60%;
+    object-fit: contain;
+}
+
+@media screen and (max-width: 600px) {
+    #Certificate2 {
+        width: 100%;
+        height: 40%;
+    }
+}
+
+.certificates12text {
+    color: white;
+    font-size: 15px;
+    font-family: cursive;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    .certificates12text {
+        font-size: 8px;
+    }
+}
+
+.blog-section {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+#Ds-button {
+    width: 40%;
+    height: 20%;
+    background: linear-gradient(
+        90deg,
+        black,
+        #707070
+    );
+    box-shadow: 3px 3px 6px white, -3px -3px 6px white;
+    color: white;
+    font-size: 17px;
+    font-family: cursive;
+    margin: 0 30% 10% 30%;
+}
+
+@media screen and (max-width: 600px) {
+    #Ds-button {
+        width: 60%;
+        height: 30%;
+        font-size: 10px;
+        margin-left: 20%;
+    }
+}
+
+#Deadside {
+    margin-top: 15%;
+    font-size: 20px;
+    font-family: cursive;
+    color: white;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    #Deadside {
+        margin-top: 7%;
+        font-size: 16px;
+    }
+}
+
+.contact-section {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+#Contact-details {
+    font-size: 20px;
+    font-family: cursive;
+    color: white;
+    text-align: center;    
+    margin-top: 5%;
+}
+
+@media screen and (max-width: 600px) {
+    #Contact-details {
+        font-size: 9px;
+        margin-right: 15%;
+    }
+}
+
+ul {
+    list-style: none;
+}
+
+#Email-button {
+    width: 40%;
+    height: 20%;
+    background: linear-gradient(
+        90deg,
+        black,
+        #707070
+    );
+    box-shadow: 3px 3px 6px white, -3px -3px 6px white;
+    color: white;
+    font-size: 17px;
+    font-family: cursive;
+    margin: 0 30% 10% 30%;
+    margin-top: 20%;
+}
+
+@media screen and (max-width: 600px) {
+    #Email-button {
+        width: 60%;
+        height: 30%;
+        font-size: 10px;
+        margin-left: 20%;
+        margin-top: 15%;
+    }
+}
+
+#Private-email {
+    font-family: cursive;
+    color: #686868;
+    font-size: 25px;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    #Private-email {
+        font-size: 14px;
+    } 
+}
+
+#Private-email-text {
+    color: white;
+    font-family: cursive;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10%;
+}
+
+@media screen and (max-width: 600px) {
+    #Private-email-text {
+        font-size: 12px;
+    }  
+}
+
+#Else {
+    font-size: 14px;
+    font-family: cursive;
+    color: white;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    #Else {
+        font-size: 8px;
+    } 
+}
+
+#Front-page {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    overflow: hidden;
+    z-index: 100;
+}
+
+#Marlowe {
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: cursive;
+    position: absolute;
+    top: 45%;
+    left: 37%;
+}
+
+@media screen and (max-width: 600px) {
+    #Marlowe {
+        font-size: 25px;
+        position: absolute;
+        top: 45%;
+        left: 26%;
+    } 
+}
+
+#Portfolio {
+    color: white;
+    font-size: 40px;
+    font-family: cursive;
+    position: absolute;
+    top: 45%;
+    left: 49%;
+}
+
+@media screen and (max-width: 600px) {
+    #Portfolio {
+        font-size: 25px;
+        position: absolute;
+        top: 45%;
+        left: 53%;
+    }
+}
+
+
