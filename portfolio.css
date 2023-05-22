@@ -96,7 +96,7 @@ html, body {
         width: 80%;
         height: 18%;
         position: absolute;
-        top: 53%;
+        top: 55%;
         left: 9.5%;
     } 
 }
@@ -161,7 +161,7 @@ html, body {
     #Home-text {
         padding-top: 0;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        font-size: 9px;
+        font-size: 12px;
     }
 }
 
@@ -192,9 +192,17 @@ html, body {
 }
 
 @media screen and (max-width: 600px) {
-    #Skills-text, #Certificates-text, #Works-text, #Blog-text, #Contact-text {
+    #Skills-text, #Certificates-text, #Blog-text, #Contact-text {
         margin-left: 10px;
-        font-size: 9px;
+        font-size: 12px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #Works-text {
+        margin-left: 15px;
+        font-size: 10px;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     }
 }
@@ -280,7 +288,7 @@ html, body {
 @media screen and (max-width: 600px) {
     #On-button {
         position: absolute;
-        top: 9.5%;
+        top: 8.5%;
         left: 65%;
         display: none;
         width: 60px;
@@ -605,7 +613,7 @@ html, body {
 
 @media screen and (max-width: 600px) {
     #Deadside {
-        margin-top: 7%;
+        margin-top: 15%;
         font-size: 16px;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     }
@@ -628,8 +636,8 @@ html, body {
 
 @media screen and (max-width: 600px) {
     #Contact-details {
-        font-size: 9px;
-        margin-right: 15%;
+        font-size: 12px;
+        margin-right: 10%;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     }
 }
@@ -734,7 +742,7 @@ ul {
         font-size: 25px;
         position: absolute;
         top: 45%;
-        left: 26%;
+        left: 25%;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     } 
 }
@@ -753,7 +761,7 @@ ul {
         font-size: 25px;
         position: absolute;
         top: 45%;
-        left: 53%;
+        left: 54%;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     }
 }
