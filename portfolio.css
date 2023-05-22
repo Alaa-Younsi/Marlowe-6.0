@@ -23,7 +23,7 @@ html, body {
 @media screen and (max-width: 600px) {
     #canvas {
         border: 2px solid white;
-        height: 90vh;
+        height: 89vh;
         margin-top: 1vh;
     }
 }
@@ -63,11 +63,11 @@ html, body {
 
 @media screen and (max-width: 600px) {
     #Tv {
-        width: 63%;
-        height: 240px;
+        width: 70%;
+        height: 38%;
         position: absolute;
-        top: 18%;
-        left: 18%;
+        top: 15%;
+        left: 14%;
     }
 }
 
