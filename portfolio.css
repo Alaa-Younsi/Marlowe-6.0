@@ -2,11 +2,6 @@
 *,*:before,*:after {
     display: flexbox;
     box-sizing: inherit;
-    -webkit-user-select: inherit;
-    user-select: inherit;
-    -webkit-user-drag: inherit;
-    -webkit-tap-highlight-color: inherit;
-    backface-visibility: inherit
 }
 
 html, body {  
@@ -28,15 +23,13 @@ html, body {
 @media screen and (max-width: 600px) {
     #canvas {
         border: 2px solid white;
-        height: 92vh;
+        height: 90vh;
         margin-top: 1vh;
-
-
     }
 }
 
 #Title {
-    position: absolute;
+    position: fixed;
     top: 10%;
     left: 10%;
     font-size: 50px;
@@ -56,11 +49,11 @@ html, body {
 }
 
 #Tv {
-    width: 400px;
-    height: 450px;
-    position: absolute;
-    top: 170px;
-    left: 100px;
+    width: 26%;
+    height: 60%;
+    position: fixed;
+    top: 23%;
+    left: 7%;
     background-color: black;
     box-shadow: 8px 8px 8px black;
     border-top-right-radius: 5%;
@@ -71,10 +64,10 @@ html, body {
 @media screen and (max-width: 600px) {
     #Tv {
         width: 63%;
-        height: 230px;
+        height: 240px;
         position: absolute;
-        top: 110px;
-        left: 70px;
+        top: 18%;
+        left: 18%;
     }
 }
 
@@ -91,7 +84,7 @@ html, body {
     background-color: black;
     width: 45%;
     height: 37%;
-    position: absolute;
+    position: fixed;
     top: 12%;
     right: 12%;
     box-shadow: 8px 8px 8px black;
@@ -112,7 +105,7 @@ html, body {
     background-color: black;
     width: 19%;
     height: 33%;
-    position: absolute;
+    position: fixed;
     top: 56%;
     right: 7%;
     box-shadow: 8px 8px 8px black;
@@ -167,7 +160,7 @@ html, body {
 @media screen and (max-width: 600px) {
     #Home-text {
         padding-top: 0;
-        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         font-size: 9px;
     }
 }
@@ -202,6 +195,7 @@ html, body {
     #Skills-text, #Certificates-text, #Works-text, #Blog-text, #Contact-text {
         margin-left: 10px;
         font-size: 9px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     }
 }
 
@@ -216,6 +210,7 @@ html, body {
     #Info-text {
         font-size: 10px;
         margin-right: 17%;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     }
 }
 
@@ -223,6 +218,8 @@ html, body {
     z-index: 99;
     width: 21%;
     height: 30%;
+    margin-left: 2.5%;
+    margin-top: 3%;
     background: linear-gradient(
         45deg,
         #202020,
@@ -238,6 +235,8 @@ html, body {
         z-index: 99;
         width: 21%;
         height: 38%;
+        margin-left: 2%;
+        margin-top: 1.5%;        
         background: linear-gradient(
             45deg,
             #202020,
@@ -251,119 +250,6 @@ html, body {
 
 .remote-button:active {
     transform: translateY(3px);
-}
-
-#Home-button {
-    position: absolute;
-    top: 13px;
-    left: 8px;
-}
-
-@media screen and (max-width: 600px) {
-    #Home-button {
-        position: absolute;
-        top: 2px;
-        left: 5px;
-    }
-}
-
-#Skills-button {
-    position: absolute;
-    top: 13px;
-    left: 103px;
-}
-
-@media screen and (max-width: 600px) {
-    #Skills-button {
-        position: absolute;
-        top: 2px;
-        left: 62px;
-    }
-}
-
-#Info-button {
-    position: absolute;
-    top: 13px;
-    left: 203px;
-}
-
-@media screen and (max-width: 600px) {
-    #Info-button {
-        position: absolute;
-        top: 2px;
-        left: 122px;
-    }
-}
-
-#Works-button {
-    position: absolute;
-    top: 13px;
-    left: 303px;
-}
-
-@media screen and (max-width: 600px) {
-    #Works-button {
-        position: absolute;
-        top: 2px;
-        left: 182px;
-    }
-}
-
-#Certificates-button {
-    position: absolute;
-    top: 55px;
-    left: 8px;
-}
-
-@media screen and (max-width: 600px) {
-    #Certificates-button {
-        position: absolute;
-        top: 25px;
-        left: 5px;
-    }
-}
-
-
-#Blog-button {
-    position: absolute;
-    top: 55px;
-    left: 103px;
-}
-
-@media screen and (max-width: 600px) {
-    #Blog-button {
-        position: absolute;
-        top: 25px;
-        left: 63px;
-    }
-}
-
-#Contact-button {
-    position: absolute;
-    top: 55px;
-    left: 203px;
-}
-
-@media screen and (max-width: 600px) {
-    #Contact-button {
-        position: absolute;
-        top: 25px;
-        left: 121px;
-    }
-}
-
-#Off-button {
-    position: absolute;
-    top: 55px;
-    left: 303px;
-}
-
-@media screen and (max-width: 600px) {
-    #Off-button {
-        position: absolute;
-        top: 25px;
-        left: 182px;
-    }
 }
 
 .btn{
@@ -558,6 +444,7 @@ html, body {
         font-size: 8px; 
         width: 20%;
         margin-left: 6%;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     }
 }
 
@@ -570,6 +457,7 @@ html, body {
 @media screen and (max-width: 600px) {
     .sstt {
         font-size: 10px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     }
 }
 
@@ -593,6 +481,7 @@ html, body {
     #Mini-novel {
         font-size: 11px;
         margin: 10px 20px 10px 20px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     }
 }
 
@@ -606,6 +495,7 @@ html, body {
 @media screen and (max-width: 600px) {
     #Mini-novel-title {
         font-size: 16px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     }
 }
 
@@ -669,6 +559,7 @@ html, body {
 @media screen and (max-width: 600px) {
     .certificates12text {
         font-size: 8px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     }
 }
 
@@ -700,6 +591,7 @@ html, body {
         height: 30%;
         font-size: 10px;
         margin-left: 20%;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     }
 }
 
@@ -715,6 +607,7 @@ html, body {
     #Deadside {
         margin-top: 7%;
         font-size: 16px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     }
 }
 
@@ -737,6 +630,7 @@ html, body {
     #Contact-details {
         font-size: 9px;
         margin-right: 15%;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     }
 }
 
@@ -767,6 +661,7 @@ ul {
         font-size: 10px;
         margin-left: 20%;
         margin-top: 15%;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     }
 }
 
@@ -780,6 +675,7 @@ ul {
 @media screen and (max-width: 600px) {
     #Private-email {
         font-size: 14px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     } 
 }
 
@@ -794,6 +690,7 @@ ul {
 @media screen and (max-width: 600px) {
     #Private-email-text {
         font-size: 12px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     }  
 }
 
@@ -807,6 +704,7 @@ ul {
 @media screen and (max-width: 600px) {
     #Else {
         font-size: 8px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     } 
 }
 
@@ -837,6 +735,7 @@ ul {
         position: absolute;
         top: 45%;
         left: 26%;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     } 
 }
 
@@ -855,6 +754,7 @@ ul {
         position: absolute;
         top: 45%;
         left: 53%;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     }
 }
 
